@@ -1,0 +1,41 @@
+mensaje,prioridad,palabras_clave,hora,categoria
+"No puedo conectarme al wifi en mi oficina",Alta,"wifi, red",9,Red
+"La impresora no responde al enviar documentos",Media,"impresora, hardware",10,Hardware
+"Error al instalar el sistema contable",Alta,"instalación, software",14,Software
+"No recuerdo mi contraseña para iniciar sesión",Baja,"contraseña, usuario",8,Usuario
+"Se cayó el servidor de correo institucional",Alta,"servidor, red",11,Red
+"La pantalla del portátil está dañada",Media,"pantalla, laptop",16,Hardware
+"El programa de nómina se cierra solo",Alta,"programa, nómina",15,Software
+"No puedo acceder a mi cuenta de usuario",Baja,"acceso, usuario",9,Usuario
+"La red en el segundo piso está caída",Alta,"red, conexión",13,Red
+"El teclado del computador dejó de funcionar",Media,"teclado, pc",10,Hardware
+"El software de contabilidad no abre",Alta,"contabilidad, sistema",12,Software
+"No recibo notificaciones en mi correo",Baja,"correo, usuario",8,Usuario
+"La conexión de internet es muy lenta",Alta,"internet, red",14,Red
+"El disco duro hace ruidos extraños",Media,"disco duro, hardware",17,Hardware
+"Error en la actualización de Windows",Alta,"actualización, windows",11,Software
+"No puedo cambiar mi contraseña en el sistema",Baja,"contraseña, sistema",7,Usuario
+"La VPN no conecta desde casa",Alta,"vpn, remoto",20,Red
+"El mouse inalámbrico no funciona",Media,"mouse, hardware",9,Hardware
+"La aplicación de reportes muestra errores",Alta,"aplicación, reportes",13,Software
+"No puedo recuperar mi cuenta",Baja,"cuenta, usuario",15,Usuario
+"Se pierde la conexión de red cada 5 minutos",Alta,"red, desconexión",10,Red
+"El proyector no enciende",Media,"proyector, hardware",8,Hardware
+"Problema al abrir Excel",Alta,"excel, software",14,Software
+"No aparece mi usuario en el sistema",Baja,"usuario, acceso",16,Usuario
+"La red inalámbrica no está disponible",Alta,"wifi, red",9,Red
+"El ventilador del CPU hace ruido",Media,"cpu, hardware",12,Hardware
+"El antivirus bloquea programas legítimos",Alta,"antivirus, software",11,Software
+"No puedo actualizar mis datos de perfil",Baja,"perfil, usuario",10,Usuario
+"No hay acceso a internet en toda el área",Alta,"internet, red",8,Red
+"El monitor muestra líneas verticales",Media,"monitor, hardware",14,Hardware
+"El sistema de facturación no carga",Alta,"facturación, sistema",13,Software
+"No puedo ingresar con mi usuario en la app",Baja,"usuario, app",7,Usuario
+"El switch de red está fallando",Alta,"switch, red",15,Red
+"La batería del portátil no carga",Media,"batería, laptop",18,Hardware
+"El editor de texto se congela",Alta,"editor, software",11,Software
+"No recibo correos en mi bandeja",Baja,"correo, usuario",9,Usuario
+"Se reinicia el router constantemente",Alta,"router, red",12,Red
+"El escáner no reconoce documentos",Media,"escáner, hardware",13,Hardware
+"Problema al abrir el navegador web",Alta,"navegador, software",10,Software
+"No puedo acceder a mi perfil en el portal",Baja,"portal, usuario",8,Usuario

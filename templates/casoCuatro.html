@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casos de uso</title>
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+        crossorigin="anonymous"
+    >
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body class="bgH1">
+     <nav class="navbar navbar-expand-lg bg-dark navbar-dark"> 
+    <div class="container-fluid"> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+        <span class="navbar-toggler-icon"></span> 
+      </button> 
+      <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
+          <li class="nav-item"> 
+            <a class="nav-link active" aria-current="page" href="/">Home</a> 
+          </li> 
+          <li class="nav-item dropdown"> 
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+              Menu 
+            </a> 
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+              <!-- Submenú Casos ML -->
+              <li class="dropdown-submenu"> 
+                <a class="dropdown-item dropdown-toggle" href="#">Casos ML</a> 
+                <ul class="dropdown-menu"> 
+                  <li><a class="dropdown-item" href="/casoUno">Primer Caso</a></li> 
+                  <li><a class="dropdown-item" href="/casoDos">Segundo Caso</a></li> 
+                  <li><a class="dropdown-item" href="/casoTres">Tercer Caso</a></li> 
+                  <li><a class="dropdown-item" href="/casoCuatro">Cuarto Caso</a></li> 
+                </ul> 
+              </li> 
+
+              <!-- Submenú Regresión Lineal -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">Regresión Lineal</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/regresionConceptos">Conceptos básicos</a></li>
+                  <li><a class="dropdown-item" href="/LR">Ejercicio práctico</a></li>
+                </ul>
+              </li>
+                <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">Regresion Logistica</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/LogisConceptos">Conceptos básicos</a></li>
+                  <li><a class="dropdown-item" href="/Lc">Ejercicio práctico</a></li>
+                </ul>
+              </li>
+
+              <!-- Submenú Tipos de Algoritmos de Clasificación -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">Tipos de Algoritmos de Clasificación</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/Practicos">Conceptos básicos</a></li>
+                  <li><a class="dropdown-item" href="/naivebayes">Caso práctico</a></li>
+                </ul>
+              </li>
+            </ul> 
+          </li> 
+        </ul> 
+      </div>
+    </div>
+  </nav> 
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+        crossorigin="anonymous">
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caso de uso: The North Face e IBM Watson</title>
+  <style>
+    .navbar{
+        background-color: black;
+      }
+      .dropdown-menu {
+        background-color: #212529;
+      }
+      .dropdown-item {
+        color: #fff;
+      }
+      .dropdown-item:hover {
+        background-color: #343a40;
+      }
+      .dropdown-submenu{
+        position: relative
+      }
+      .dropdown-submenu > .dropdown-menu{
+        display:none;
+        top:0;
+        left:100%;
+        margin-top: 3px;
+      }
+      .dropdown-submenu:hover > .dropdown-menu {
+        display: block;
+      }
+    body {
+      font-family: Arial, sans-serif;
+      background:#111;
+      color:#fff; /* 🔹 Texto en blanco */
+      line-height:1.6;
+      padding:30px;
+      margin:0;
+    }
+    h1, h2, h3 {
+      color:#d3131c; /* 🔹 Rojo North Face */
+    }
+    h1 { text-align:center; margin-bottom:20px; }
+    h2 { margin-top:30px; }
+    ul { margin:10px 0 20px 20px; }
+    .beneficio { margin:6px 0; }
+    .card {
+      background:#eae5e5;
+      padding:20px;
+      border-radius:12px;
+      box-shadow:0 6px 20px rgba(233, 228, 228, 0.8);
+      max-width:900px;
+      margin:0 auto;
+    }
+    .imagen {
+      text-align:center;
+      margin-bottom:20px;
+    }
+    .imagen img {
+      max-width:100%;
+      border-radius:12px;
+    }
+    .btn-link {
+      display:inline-block;
+      margin-top:20px;
+      padding:12px 20px;
+      background:#d3131c; /* 🔹 Rojo North Face */
+      color:#fff;
+      text-decoration:none;
+      border-radius:8px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+    .btn-link:hover {
+      background:#a50f15;
+    }
+  </style>
+</head>
+<body>
+    </div>
+
+    <h1>Caso de uso: The North Face e IBM Watson</h1>
+
+    <h2>Contexto</h2>
+    <p>
+      The North Face, reconocida marca de ropa y accesorios para actividades al aire libre, se enfrentaba a un problema común en las tiendas online:
+    </p>
+    <ul>
+      <li>Gran cantidad de productos.</li>
+      <li>Dificultad de los clientes para encontrar lo que realmente necesitan.</li>
+      <li>Alto número de carritos abandonados por falta de orientación durante la compra.</li>
+    </ul>
+    <p>
+      Para resolverlo, la empresa implementó IBM Watson, un sistema de inteligencia artificial y machine learning especializado en comprender lenguaje natural y ofrecer recomendaciones inteligentes.
+    </p>
+
+    </h2> Aplicación de IBM Watson</h2>
+    <h3>Personal Shopper Digital:</h3>
+    <ul>
+      <li>En la página web, Watson actúa como un asesor virtual.</li>
+      <li>Hace preguntas al cliente (ejemplo: “¿Dónde piensas usar la chaqueta? ¿En qué condiciones de clima?”).</li>
+      <li>Analiza las respuestas con algoritmos de procesamiento de lenguaje natural (NLP).</li>
+    </ul>
+
+    <h3> Recomendaciones personalizadas:</h3>
+    <ul>
+      <li>Watson combina los intereses del cliente con datos históricos de compras y visitas.</li>
+      <li>Genera recomendaciones en tiempo real que coinciden con el estilo, necesidad y presupuesto del comprador.</li>
+    </ul>
+
+    <h3>Aplicación móvil:</h3>
+    <ul>
+      <li>La app de The North Face con Watson acompaña al usuario durante su experiencia de compra.</li>
+      <li>Sugiere productos similares o complementarios.</li>
+      <li>Ayuda a construir perfiles más detallados basados en gustos, hábitos de navegación y compras previas.</li>
+    </ul>
+
+    <h2> Beneficios obtenidos</h2>
+    <ul>
+      <li class="beneficio"> Reducción de carritos abandonados, ya que el cliente encuentra lo que busca más rápido.</li>
+      <li class="beneficio"> Aumento de ventas gracias a recomendaciones más acertadas.</li>
+      <li class="beneficio"> Mejora de la experiencia del usuario online, acercándose a la atención personalizada de una tienda física.</li>
+      <li class="beneficio"> Segmentación avanzada de clientes, que permite diseñar campañas de marketing más efectivas.</li>
+      <li class="beneficio"> Optimización de la toma de decisiones, al tener datos más claros sobre preferencias de consumo.</li>
+    </ul>
+
+    <h2>Relevancia del caso</h2>
+    <p>
+      Este ejemplo demuestra cómo el Machine Learning aplicado al e-commerce puede:
+    </p>
+    <ul>
+      <li>Convertir la experiencia digital en algo más humano y personalizado.</li>
+      <li>Servir como modelo para otras tiendas online que manejan catálogos grandes y necesitan una atención más dinámica.</li>
+      <li>Reemplazar la figura del vendedor físico con un asistente virtual inteligente, disponible 24/7.</li>
+    </ul>
+
+    <div style="text-align:center;">
+      <a href="https://blog.beservices.es/blog/ejemplos-de-machine-learning-en-empresas" target="_blank" class="btn-link">
+        🌐 Leer más sobre Machine Learning en empresas
+      </a>
+    </div>
+  </div>
+</body>
+</html>
